@@ -41,9 +41,7 @@ public class column_arr {
                 }
             }
             System.out.println("hàng " + i + " của bạn có " + a + " giá trị");
-            for (int b = 0; b < witch; b++) {
-                arr[i][b] = arr2[b];
-            }
+            if (witch >= 0) System.arraycopy(arr2, 0, arr[i], 0, witch);
         }
         System.out.println("mảng của bạn là");
         for (int i = 0; i < height; i++) {
